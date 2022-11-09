@@ -1,0 +1,33 @@
+/*
+Свяжите поле ввода для имени с соответствующим тегом label с помощью атрибута for.
+Добавьте для поля ввода телефона атрибут placeholder со значением 8-999-999-99-99.
+Для поля ввода возраста укажите тип "число" и минимальное значение – 0, а максимальное – 150.
+*/
+
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <form>
+        <div class='field'>
+            <label for='name__input'>Укажите ваше имя:</label>
+            <input id='name__input' type='text'>
+        </div>
+        <div class='field'>
+            <label>Укажите вашу фамилию: </label>
+            <input id='lastname__input' type='text'>
+        </div>
+        <div class='field'>
+            <label type="number" X>Укажите ваш возраст:</label>
+            <input id='age_input' type="number" min="0" max="150">
+        </div>
+        <div class='field'>
+            <label>Укажите ваш телефон: </label>
+            <input id='phone__input' type='text' placeholder='8-999-999-99-99'>
+        </div>
+        <button>Отправить</button>
+    </form>
+</body>

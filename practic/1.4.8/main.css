@@ -1,0 +1,22 @@
+body {
+    background-color: #6f9e80;
+    margin: 0;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.facts div {
+    padding: 10px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    border-radius: 5px;
+    margin: 10px;
+
+
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}

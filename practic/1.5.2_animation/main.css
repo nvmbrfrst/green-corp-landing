@@ -1,0 +1,45 @@
+body {
+    background-color: #6f9e80;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+@keyframes example {
+    0% {
+        left: -100px
+    }
+
+    50% {
+        left: 60vw;
+        top: 100px
+    }
+
+    60% {
+        left: 30vw;
+        top: 100px
+    }
+
+    100% {
+        left: 100vw;
+        top: 200px
+    }
+}
+
+
+img {
+    width: 100px;
+    position: absolute;
+    left: -100px;
+    top: 200px;
+    /* имя анимации */
+    animation-name: example; 
+    /* продолжительность анимации */
+    animation-duration: 3s;
+    /* количество повторений анимации */
+    animation-iteration-count: 2;
+    /*  после анимации стиль элемента соответствовал последнему ключевому кадру анимации */
+    animation-fill-mode: forwards;
+    /* как анимация продвигается по продолжительности каждого цикла */
+    animation-timing-function: linear;
+}
