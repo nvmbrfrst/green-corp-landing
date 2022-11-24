@@ -197,9 +197,23 @@ h3 {
   margin-bottom: 30px;
 }
 
-features {
+.features {
   background-color:white;
   padding: 115px 60px 115px 60px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border-style: solid;
+  border-width:  1px;
+  border-color: #D9E4E6;
+  border-radius: 5px;
 }
 
 @keyframes rotation{
@@ -290,9 +304,19 @@ features {
     font-weight: 600;
   }
   
-  features {
+  .features {
     background-color:white;
     margin: 50px 10px 50px 10px;
+
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto;
+    gap: 50px;
+    
+  
   }
 
  .footer__container {
