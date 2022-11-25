@@ -216,6 +216,28 @@ h3 {
   border-radius: 5px;
 }
 
+.card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color:#eaeff9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  font-style: normal;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
 @keyframes rotation{
   0%{
     transform: rotate(0deg);
