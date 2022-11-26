@@ -270,6 +270,20 @@ header a {
   font-size: 48px;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> promo >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.promo {
+  display: flex;
+}
+
+.promo__image {
+  display: flex;
+  width: 50%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>> footer >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 footer {
@@ -309,6 +323,8 @@ footer {
 }
 
 
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>> @keyframes >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 @keyframes rotation {
