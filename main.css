@@ -4,34 +4,10 @@ body {
   margin: 0;
 }
 
-/* a {
-
-} */
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  position: sticky;
-  background-color: white;
-  top: 0;
-  z-index: 1;
-}
-
-.header__logo {
-  height: 30px;
-}
-
 a {
   text-decoration: none;
   color: #213053;
-}
-
-header a {
-  font-size: 15px;
   font-weight: 600;
-  margin-right: 25px;
 }
 
 button {
@@ -52,6 +28,45 @@ button:hover {
   box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
   transition: background-color 0.3s ease-in;
 }
+/* 
+h3 {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+} */
+
+select {
+  appearance: none;
+}
+
+input {
+  outline: none;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>> header >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 1;
+}
+
+header a {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 25px;
+}
+
+.header__logo {
+  height: 30px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> about >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 .about {
   display: flex;
@@ -95,6 +110,8 @@ button:hover {
   max-width: 550px;
 }
 
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>> form >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .form__container {
   width: 550px;
 }
@@ -108,7 +125,6 @@ button:hover {
   padding-top: 115px;
   padding-bottom: 115px;
   text-align: center;
-
 }
 
 .form h1 {
@@ -153,18 +169,119 @@ button:hover {
   font-weight: 600;
 }
 
-select {
-  appearance: none;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> features >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.features {
+  background-color: white;
+  padding: 115px 60px 115px 60px;
 }
 
-input {
-  outline: none;
+.cards {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+.card {
+  padding: 35px 40px 25px 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D9E4E6;
+  border-radius: 5px;
+}
+
+.card__logo {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 700;
+  background-color: #eaeff9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock {
+  font-style: normal;
+}
+
+.features__border {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E6EAF4;
+}
+
+.features__feedback {
+  display: flex;
+}
+
+.features__feedback-left {
+  margin-right: 10px;
+}
+
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+
+.features__feedback-right {
+  display: flex;
+  justify-content: center;
+}
+
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+
+.features__rate-box {
+  background-color: #1D263A;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+
+.fa-star {
+  color: #ff7039;
+}
+
+.features__box {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  color: white;
+  border-radius: 25px;
+
+}
+
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 0 0 20px 0;
+  font-size: 48px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> footer >>>>>>>>>>>>>>>>>>>>>>>>> */
 
 footer {
   padding: 90px 20px 90px 20px;
-  font-size:16px;
-  font-weight:600;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer h3 {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-bottom: 30px;
 }
 
 .footer__container {
@@ -191,122 +308,15 @@ footer {
   margin-bottom: 15px;
 }
 
-h3 {
-  font-size: 16px;
-  opacity: 0.7;
-  margin-bottom: 30px;
-}
 
-.features {
-  background-color:white;
-  padding: 115px 60px 115px 60px;
-}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>> @keyframes >>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
-}
-
-.card {
-  padding: 35px 40px 25px 40px;
-  border-style: solid;
-  border-width:  1px;
-  border-color: #D9E4E6;
-  border-radius: 5px;
-}
-
-.card__logo {
-  width: 100px;
-  height: 100px;
-  font-size: 32px;
-  font-weight: 700;
-  background-color:#eaeff9;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.clock {
-  font-style: normal;
-}
-
-h2 {
-  font-size: 48px;
-}
-
-h3 {
-  font-size: 16px;
-  line-height: 22px;
-  opacity: 0.8;
-}
-
-.features__border{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-style:solid;
-  border-width: 1px;
-  border-color:#E6EAF4;
-}
-
-.features__feedback {
-  display: flex;
-  justify-content: center;
-}
-
-.features__feedback-left {
-  margin-right: 10px;
-}
-
-.features__feedback-left p {
-  font-size: 16px;
-  line-height: 26px;
-  opacity: 0.7;
-}
-
-.features__feedback-right {
-  display: flex;
-  align-items: center;
-}
-
-.features__savings-box {
-  background-color:#dc5e26 ;
-  box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
-  margin-right: 30px;
-}
-
-.features__rate-box {
-  background-color: #1D263A ;
-  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
-}
-
-.fa-star {
-  color: #ff7039;
-}
-
-.features__box {
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-bottom: 25px;
-  padding-left: 40px;
-  color: white;
-  border-radius: 25px;
-
-}
-
-.features__box h3 {
-  margin-top: 0px;
-  margin-bottom: 20px;
-  font-size: 48px;
-}
-
-@keyframes rotation{
-  0%{
+@keyframes rotation {
+  0% {
     transform: rotate(0deg);
   }
 
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -321,78 +331,51 @@ h3 {
   position: absolute;
 }
 
-/* Планшеты */
-@media (max-width: 1024px) {
-  .about {
-      padding: 115px 20px;
-  }
+/*>>>>>>>>>>>>>>>>>>>>>>> Мобильные устройства >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-  .about h1 {
-      font-size: 36px;
-      line-height: 40px;
-  }
-
-  .about__image {
-      width: 280px;
-  }
-
-  .about__sun-image {
-      width: 75px;
-      height: 75px;
-  }
-}
-
-/* Мобильные устройства */
 @media (max-width: 720px) {
   header {
-      padding: 10px;
+    padding: 10px;
   }
 
   .header__logo {
-      height: 20px;
+    height: 20px;
   }
 
   header a {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 
   .about {
-      flex-direction: column-reverse;
-      padding: 50px 10px;
+    flex-direction: column-reverse;
+    padding: 50px 10px;
   }
 
   .about h1 {
-      font-size: 36px;
-      line-height: 40px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
   .about__image {
-      width: 280px;
+    width: 280px;
   }
 
   .about__sun-image {
-      width: 75px;
-      height: 75px;
+    width: 75px;
+    height: 75px;
   }
 
   .form {
-      padding: 50px 10px;
+    padding: 50px 10px;
   }
 
   .form h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
 
-  footer {
-    padding: 90px 20px;
-    font-size: 16px;  
-    font-weight: 600;
-  }
-  
   .features {
-    background-color:white;
+    background-color: white;
     margin: 50px 10px 50px 10px;
-
   }
 
   .features__box h3 {
@@ -424,35 +407,62 @@ h3 {
     font-size: 36px;
   }
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+  /*>>>>>>>>>>>>>>>>>> footer mobile >>>>>>>>>>>>>>>>>>>*/
 
- .footer__container {
+  footer {
+    padding: 90px 20px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .footer__container {
     display: flex;
-    justify-content: center;
- }
-  
- .footer__copy {
+    flex-direction: column;
+  }
+
+  .footer__copy {
     text-align: center;
     opacity: 0.5;
     margin-top: 40px;
- }
+  }
 
- .footer__group {
-  margin-right: 80px;
+  .footer__group {
+    margin-right: 80px;
+  }
+
+  footer h3 {
+    opacity: 0.7;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__links a {
+    margin-bottom: 15px;
+  }
 }
 
-footer h3 {
-  opacity: 0.7;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
+/* Планшеты */
+@media (max-width: 1024px) {
+  .about {
+    padding: 115px 20px;
+  }
 
-.footer__links {
-  display: flex;
-  flex-direction: column;
-}
+  .about h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
 
-.footer__links a {
-  margin-bottom: 15px;
-}
+  .about__image {
+    width: 280px;
+  }
+
+  .about__sun-image {
+    width: 75px;
+    height: 75px;
+  }
 }
