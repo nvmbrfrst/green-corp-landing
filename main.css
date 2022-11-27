@@ -28,6 +28,7 @@ button:hover {
   box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
   transition: background-color 0.3s ease-in;
 }
+
 /* 
 h3 {
   font-size: 16px;
@@ -154,7 +155,8 @@ header a {
   margin-bottom: 20px;
 }
 
-.form input, .form select {
+.form input,
+.form select {
   font-size: 18px;
   color: #213053;
   height: 60px;
@@ -202,6 +204,12 @@ header a {
   justify-content: center;
 }
 
+.card p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.8;
+}
+
 .clock {
   font-style: normal;
 }
@@ -217,6 +225,7 @@ header a {
 
 .features__feedback {
   display: flex;
+  justify-content: space-around;
 }
 
 .features__feedback-left {
@@ -277,11 +286,59 @@ header a {
 }
 
 .promo__image {
-  display: flex;
+  background-image: url(img/promo.jpg);
   width: 50%;
   flex-shrink: 0;
   background-size: cover;
   background-position: center;
+}
+
+.promo__right {
+  background: #dd5f26;
+  padding: 160px 60px 160px 60px;
+}
+
+.promo__text {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.promo__text p {
+  opacity: 0.8;
+}
+
+.promo__text p::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ec6b29;
+  margin-right: 10px;
+}
+
+.promo__button {
+  display: flex;
+  align-content: stretch;
+  justify-content: center;
+
+}
+
+.promo__text button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 16px 36px rgba(16, 122, 28, 0.3);
+  padding: 15px 30px;
+}
+
+.promo__text button i {
+  font-size: 15px;
+  margin-left: 5px;
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>> footer >>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -421,6 +478,19 @@ footer {
 
   h2 {
     font-size: 36px;
+  }
+
+  .promo {
+    flex-direction: column-reverse;
+  }
+
+  .promo__right {
+    padding: 50px 10px;
+  }
+
+  .promo__image {
+    width: 100%;
+    height: 500px;
   }
 
   /*>>>>>>>>>>>>>>>>>> footer mobile >>>>>>>>>>>>>>>>>>>*/
